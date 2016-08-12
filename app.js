@@ -1,10 +1,8 @@
 var express = require('express');
-var postgres = require('./models/models');
+var path = require('path');
 var app = express();
 
-app.get('/', function(req, res) {
-    res.send("Hello World!");
-})
+app.use(express.static(path.join(__dirname, 'static/views')));
 
 var server = app.listen(8080, function () {
 
