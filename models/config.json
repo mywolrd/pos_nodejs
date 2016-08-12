@@ -1,0 +1,12 @@
+{
+    "username": "pos",
+    "password": "password",
+    "database": "projects",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "pool": {
+	"maxConnections": 4,
+	"minConnections": 2,
+	"maxIdleTime":    1000
+    }
+}
